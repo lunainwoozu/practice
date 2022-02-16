@@ -6,7 +6,6 @@ function App() {
   const [coins, setCoins] = useState([]);
   const [myMoney, setMyMoney] = useState(0);
   const [getCoin, setGetCoin] = useState(0);
-  const [showing, setShowing] = useState(false);
   useEffect(() => {
     fetch("https://api.coinpaprika.com/v1/tickers") // 정보 가져올 url
     .then((response) => response.json()) // url에서 가져온 정보를 json으로 변환
@@ -17,10 +16,7 @@ function App() {
     )
   }, [])
   const writeMoney = (e) => setMyMoney(e.target.value);
-  const selectCoin = (e) => {
-    setGetCoin(e.target.value);
-    setShowing(true);
-  }
+  const selectCoin = (e) => setGetCoin(e.target.value);
   return ( //함수 사이에 string 삽입 시: `~`, string 사이에 인자나 함수 삽입 시: ${~}
     <div>
       <h1>the coins! {loading ? null : `(${coins.length})`}</h1>
