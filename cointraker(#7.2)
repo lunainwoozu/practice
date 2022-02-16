@@ -42,10 +42,7 @@ function App() {
       </select>
       }
       <div>
-        <h2>Coins you can buy: {showing ? 
-          (myMoney / getCoin).toFixed(2)
-          : null
-        }</h2>
+        <h2>Coins you can buy: { getCoin > 0 ? (myMoney / getCoin).toFixed(2) : null}</h2>
       </div>
     </div>
   );
