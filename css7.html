@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background 실습</title>
+    <style>
+        div{
+            position: relative;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: linear-gradient(to right, red 0%, orange 100%);
+        }
+        .img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 115px;
+            height: 115px;
+            box-sizing: border-box;
+            border: 5px solid #fff;
+            background-image: url(https://d2iwdqgro8i2ew.cloudfront.net/codingon/lesson/script/26139_img.png);
+            background-color: #fff;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="img"></div>
+    </div>
+</body>
+</html>

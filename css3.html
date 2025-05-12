@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 선택자</title>
+    <style>
+        h1:hover{color: red;}
+        a:active{background: blue;}
+        input:focus{background: orange;}
+
+        .stripes{background: navy;color: #fff;}
+        .stripes div:nth-child(2),.stripes div:nth-child(6),.stripes div:nth-last-child(2){background: yellow;color: #000;}
+    </style>
+</head>
+<body>
+    <h1>h1</h1>
+    <a href="#">a태그</a>
+    <input type="text">
+    <br />
+    <br />
+    <div class="stripes">
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>navy</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>navy</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+    </div>
+</body>
+</html>

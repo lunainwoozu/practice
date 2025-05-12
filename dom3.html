@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>댓글 등록하기</h1>
+    <form>
+        <label for="id">아이디</label><input type="text" id="id">
+        <label for="comment">댓글</label><input type="text" id="comment">
+        <button type="submit">제출</button>
+    </form>
+
+    <script>
+        const form = document.querySelector("form");
+        const button = document.querySelector("button");
+        const id = document.querySelector("#id");
+        const comment = document.querySelector("#comment");
+
+        button.addEventListener('click', () => {
+            const ul = document.createElement("ul");
+            const li = ul.appendChild("li");
+            li.innerHTML = `<b>${form.id.value}</b> - ${form.comment.value}`;
+        })
+    </script>
+</body>
+</html>

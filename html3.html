@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 실습</title>
+    <style>
+        table{border:1px solid;border-collapse: collapse;text-align: center;}
+        table td{border:1px solid;}
+        img{width: 250px;}
+        .span{width: 600px;height: 200px;}
+        .span td{min-width: 100px;}
+    </style>
+</head>
+<body>
+    <table class="span">
+        <tbody>
+            <tr>
+                <td colspan="2">1</td>
+                <td rowspan="2">2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">3</td>
+                <td>center</td>
+            </tr>
+            <tr>
+                <td colspan="2">4</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <hr>
+    <p>&nbsp;</p>
+    <table class="menu">
+        <thead>
+            <th>구분</th>
+            <th>음료</th>
+            <th>가격</th>
+            <th>이미지</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>커피류</td>
+                <td>아메리카노</td>
+                <td>
+                    <p>hot: 1500원</p>
+                    <p>iced: 2000원</p>
+                </td>
+                <td>
+                    <a href="https://paikdabang.com/menu/menu_coffee/" target="_blank">
+                        <img src="https://paikdabang.com/wp-content/uploads/2018/05/HOT-%EC%95%97%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8-450x588.png" alt="아메리카노 핫">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>빽스치노</td>
+                <td>원조빽스치노</td>
+                <td>
+                    <p>basic: 3300원</p>
+                    <p>soft: 3800원</p>
+                </td>
+                <td>
+                    <a href="https://paikdabang.com/menu/menu_ccino/" target="_blank">
+                        <img src="https://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8-BASIC-450x588.png" alt="원조빽스치노 베이직">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>음료류</td>
+                <td>토피넛라떼</td>
+                <td>
+                    <p>hot: 3500원</p>
+                    <p>iced: 3500원</p>
+                </td>
+                <td>
+                    <a href="https://paikdabang.com/menu/menu_drink/" target="_blank">
+                        <img src="https://paikdabang.com/wp-content/uploads/2018/06/HOT-%ED%86%A0%ED%94%BC%EB%84%9B%EB%9D%BC%EB%96%BC-450x588.png" alt="토피넛라떼">
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

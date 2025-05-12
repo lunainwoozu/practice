@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>설문조사</h3>
+    <form>
+        <p>
+            <label for="name">
+                이름
+                <input type="text" id="name" name="name">
+            </label>
+        </p>
+        <p>
+            <label for="email">
+                이메일
+                <input type="text" id="email" name="email" placeholder="love@example.com">
+            </label>
+        </p>
+        <p>
+            <h4>나이</h4>
+            <input type="radio" id="ten" name="age" value="10대"><label for="ten">10대</label>
+            <input type="radio" id="twenty" name="age" value="20대"><label for="twenty">20대</label>
+            <input type="radio" id="thirty" name="age" value="30대"><label for="thirty">30대</label>
+            <input type="radio" id="fourty" name="age" value="40대"><label for="fourty">40대</label>
+            <input type="radio" id="fifty" name="age" value="50대"><label for="fifty">50대</label>
+            <input type="radio" id="sixty over" name="age" value="60대 이상"><label for="sixty over">60대 이상</label>
+        </p>
+        <p>
+            <h4>원하는 강의(복수응답가능합니다.)</h4>
+            <input type="checkbox" id="html" name="lecture" value="html"><label for="html">html</label>
+            <input type="checkbox" id="javascript" name="lecture" value="javascript"><label for="javascript">javascript</label>
+            <input type="checkbox" id="css" name="lecture" value="css"><label for="css">css</label>
+        </p>
+        <p>
+            <textarea name="wanted" placeholder="하고 싶은 말을 써 주세요:)"></textarea>
+            <button type="submit">제출</button>
+        </p>
+    </form>
+</body>
+</html>
